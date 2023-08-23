@@ -1,0 +1,55 @@
+[
+  
+  {
+    "title": "Shell 정리",
+    "url": "/posts/shell/",
+    "categories": "Shell, Basic",
+    "tags": "shell, zsh, bash",
+    "date": "2023-08-22 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "쉘이란?  쉘 (Shell)은 껍질을 말함  OS와 어플리케이션의 사이에 서서 유저로부터의 요구를 시스템에 전하기 위한 유저 인터페이스  커맨드를 입력하는 것으로 움직이는 프로그램을 말함  Mac에서 기본 쉘은 bash  bash는 UNIX상의 옛부터 가장 오래된 sh라고 하는 쉘에 확장 기능을 추가한 것  리눅스의 표준 쉘이기 때문에 가장 표준zsh...",
+    "content": "쉘이란?  쉘 (Shell)은 껍질을 말함  OS와 어플리케이션의 사이에 서서 유저로부터의 요구를 시스템에 전하기 위한 유저 인터페이스  커맨드를 입력하는 것으로 움직이는 프로그램을 말함  Mac에서 기본 쉘은 bash  bash는 UNIX상의 옛부터 가장 오래된 sh라고 하는 쉘에 확장 기능을 추가한 것  리눅스의 표준 쉘이기 때문에 가장 표준zsh와 bash의 차이점은?  zsh와 bash는 모두 쉘(Shell)임  zsh는 bash보다 다양한 확장기능을 추가해서 내놓은 것기타  $HOME은 현재 사용자의 홈 디렉토리이며 ~와 같은 의미  export명령어는 쉘에서 사용하는 환경변수를 설정하는 명령어  source 명령어는 쉘 스크립트 파일을 실행하는 명령어  which 명령어는 특정 명령어의 위치를 찾아주는 명령어          which [명령어]와 같이 사용함      예를 들어, which python을 입력하면 파이썬이 설치된 경로를 출력함      which 명령어는 $PATH 환경변수에 등록된 디렉토리에서 명령어를 찾음      $PATH 환경 변수는 쉘에서 사용하는 환경 변수로, 실행 파일이 위치한 디렉토리를 저장함      "
+  },
+  
+  {
+    "title": "scRNA-seq 용어 정리",
+    "url": "/posts/scRNA/",
+    "categories": "scRNA, Basic",
+    "tags": "scRNA",
+    "date": "2023-08-21 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "  UMI          Unique Molecular Identifier (고유한 분자 식별자)      극미량의 DNA/RNA를 증폭할 때 나타나는 불균등 증폭의 문제점을 해결하기 위한 바코드        donor          기증자      생물정보학에서는 유전자나 세포등의 생물학적 자료를 제공하는 사람이나 기관을 말함        Cyt...",
+    "content": "  UMI          Unique Molecular Identifier (고유한 분자 식별자)      극미량의 DNA/RNA를 증폭할 때 나타나는 불균등 증폭의 문제점을 해결하기 위한 바코드        donor          기증자      생물정보학에서는 유전자나 세포등의 생물학적 자료를 제공하는 사람이나 기관을 말함        Cytokine          혈액 속에 함유되어 있는 비교적 작은 크기의 면역 단백질 중 하나      세포 신호화(cell signalling)에 중요한 역할을 함      면역 세포가 분비하는 폭넓고 느슨한 단백질임      세포로부터 분비된 후 다른 세포나 분비한 세포 자신에게 영향을 줄 수 있음        Cytokin Profiling          세포가 분비하는 사이토카인과 신호 분자의 양을 측정하는 방법      이 방법을 통해 다양한 질병과 염증의 원인과 특징을 파악할 수 있음      "
+  },
+  
+  {
+    "title": "이미지 가져오기 및 출력하기",
+    "url": "/posts/Import-and-plot-images/",
+    "categories": "Image, Basic",
+    "tags": "python, image",
+    "date": "2023-08-20 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "개요  파이썬에서 이미지를 처리하는 대표적인 라이브러리는 PIL과 cv2가 있음  PIL은 Python Imaging Library의 약자로, 이미지를 다루기 위한 다양한 기능을 제공  cv2는 openCV의 파이썬 바인딩으로, 컴퓨터 비전과 관련된 고급 이미지 처리 기능을 제공특징  (height, width, channel) 모양의 이미지 데이터 ...",
+    "content": "개요  파이썬에서 이미지를 처리하는 대표적인 라이브러리는 PIL과 cv2가 있음  PIL은 Python Imaging Library의 약자로, 이미지를 다루기 위한 다양한 기능을 제공  cv2는 openCV의 파이썬 바인딩으로, 컴퓨터 비전과 관련된 고급 이미지 처리 기능을 제공특징  (height, width, channel) 모양의 이미지 데이터 생성  PIL은 이미지를 RBG 채널 순서로 읽고, openCV는 BGR 채널 순서로 읽음PIL 방법: 코드 및 결과from PIL import Imageimport numpy as npimport matplotlib.pyplot as plt# Load imageimg = Image.open(img_path)img_array = np.array(img)# Plot imageplt.imshow(img_array)plt.title(f'PIL, {img_array.shape}')OpenCV 방법: 코드 및 결과import cv2import matplotlib.pyplot as plt# Load imageimg = cv2.imread(img_path)img_RGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # BGR 채널을 RGB 채널로 변경# Plot imageplt.imshow(img_RGB)plt.title(f'cv2, {img_RGB.shape}')"
+  }
+  
+]
+

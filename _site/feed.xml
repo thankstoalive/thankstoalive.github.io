@@ -1,0 +1,194 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>유한한 삶 속에서</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2023-08-23T21:29:09+09:00</updated>
+  <author>
+    <name>your_full_name</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="ko"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 your_full_name </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Shell 정리</title>
+    <link href="http://localhost:4000/posts/shell/" rel="alternate" type="text/html" title="Shell 정리" />
+    <published>2023-08-22T00:00:00+09:00</published>
+  
+    <updated>2023-08-22T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/shell/</id>
+    <content src="http://localhost:4000/posts/shell/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Shell" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      쉘이란?
+
+  쉘 (Shell)은 껍질을 말함
+  OS와 어플리케이션의 사이에 서서 유저로부터의 요구를 시스템에 전하기 위한 유저 인터페이스
+  커맨드를 입력하는 것으로 움직이는 프로그램을 말함
+  Mac에서 기본 쉘은 bash
+  bash는 UNIX상의 옛부터 가장 오래된 sh라고 하는 쉘에 확장 기능을 추가한 것
+  리눅스의 표준 쉘이기 때문에 가장 표준
+
+
+zsh와 bash의 차이점은?
+
+  zsh와 bash는 모두 쉘(Shell)임
+  zsh는 bash보다 다양한 확장기능을 추가해서 내놓은 것
+
+
+기타
+
+  $HOME은 현재 사용자의 홈 디렉토리이며 ~와 같은 의미
+  export명령어는 쉘에서 사용하는 환경변수를 설정하는 명령어
+  source 명령어는 쉘 스크립트 파일을 실행하는 명령어
+  ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>scRNA-seq 용어 정리</title>
+    <link href="http://localhost:4000/posts/scRNA/" rel="alternate" type="text/html" title="scRNA-seq 용어 정리" />
+    <published>2023-08-21T00:00:00+09:00</published>
+  
+    <updated>2023-08-21T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/scRNA/</id>
+    <content src="http://localhost:4000/posts/scRNA/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="scRNA" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  UMI
+    
+      Unique Molecular Identifier (고유한 분자 식별자)
+      극미량의 DNA/RNA를 증폭할 때 나타나는 불균등 증폭의 문제점을 해결하기 위한 바코드
+    
+  
+  donor
+    
+      기증자
+      생물정보학에서는 유전자나 세포등의 생물학적 자료를 제공하는 사람이나 기관을 말함
+    
+  
+  Cytokine
+    
+      혈액 속에 함유되어 있는 비교적 작은 크기의 면역 단백질 중 하나
+      세포 신호화(cell signalling)에 중요한 역할을 함
+      면역 세포가 분비하는 폭넓고 느슨한 단백질임
+      세포로부터 분비된 후 다른 세포나 분비한 세포 자신에게 영향을 줄 수 있음
+    
+  
+  Cyt...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>이미지 가져오기 및 출력하기</title>
+    <link href="http://localhost:4000/posts/Import-and-plot-images/" rel="alternate" type="text/html" title="이미지 가져오기 및 출력하기" />
+    <published>2023-08-20T00:00:00+09:00</published>
+  
+    <updated>2023-08-20T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Import-and-plot-images/</id>
+    <content src="http://localhost:4000/posts/Import-and-plot-images/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Image" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      개요
+
+  파이썬에서 이미지를 처리하는 대표적인 라이브러리는 PIL과 cv2가 있음
+  PIL은 Python Imaging Library의 약자로, 이미지를 다루기 위한 다양한 기능을 제공
+  cv2는 openCV의 파이썬 바인딩으로, 컴퓨터 비전과 관련된 고급 이미지 처리 기능을 제공
+
+
+특징
+
+  (height, width, channel) 모양의 이미지 데이터 생성
+  PIL은 이미지를 RBG 채널 순서로 읽고, openCV는 BGR 채널 순서로 읽음
+
+
+PIL 방법: 코드 및 결과
+
+from PIL import Image
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load image
+img = Image.open(img_path)
+img_ar...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
