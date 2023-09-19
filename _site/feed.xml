@@ -4,19 +4,75 @@
   <id>http://localhost:4000/</id>
   <title>유한한 삶 속에서</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-08-23T21:29:09+09:00</updated>
+  <updated>2023-09-19T22:53:23+09:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>thankstoalive</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="ko"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 your_full_name </rights>
+  <rights> © 2023 thankstoalive </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>도커 개념</title>
+    <link href="http://localhost:4000/posts/Docker/" rel="alternate" type="text/html" title="도커 개념" />
+    <published>2023-09-11T00:00:00+09:00</published>
+  
+    <updated>2023-09-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Docker/</id>
+    <content src="http://localhost:4000/posts/Docker/" />
+    <author>
+      <name>thankstoalive</name>
+    </author>
+
+  
+    
+    <category term="Docker" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Docker란
+
+
+  컨테이너 기반의 가상화 플랫폼
+  컨테이너를 사용하여 애플리케이션의 배포, 확장 및 관리
+  컨테이너는 애플리케이션과 해당 종속성을 패키징하는 경량의 격리된 환경으로, 모든 시스템에서 일관되게 실행할 수 있음
+  컨테이너화된 애플리케이션을 빌드하고 배포하는 방법을 제공하므로 개발, 테스트, 프로덕션과 같은 다양한 환경에서 소프트웨어를 더 쉽게 개발, 배포 및 실행할 수 있음
+
+
+
+  용어 확인
+  
+    가상화 플랫폼: 가상화 기술을 제공하는 소프트웨어나 하드웨어
+    플랫폼 가상화: 한 대의 컴퓨터에 여러 개의 운영체제를 설치하고 실행하는 것을 말함
+  
+
+
+컨테이너
+
+
+  컨테이너는 라이브러리, 바이너리 및 구성 파일을 포함하여 응용 프로그램과 모든 종속성을 캡슐화하는 가볍...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -29,7 +85,7 @@
     <id>http://localhost:4000/posts/shell/</id>
     <content src="http://localhost:4000/posts/shell/" />
     <author>
-      <name>your_full_name</name>
+      <name>thankstoalive</name>
     </author>
 
   
@@ -86,7 +142,7 @@ zsh와 bash의 차이점은?
     <id>http://localhost:4000/posts/scRNA/</id>
     <content src="http://localhost:4000/posts/scRNA/" />
     <author>
-      <name>your_full_name</name>
+      <name>thankstoalive</name>
     </author>
 
   
@@ -143,7 +199,7 @@ zsh와 bash의 차이점은?
     <id>http://localhost:4000/posts/Import-and-plot-images/</id>
     <content src="http://localhost:4000/posts/Import-and-plot-images/" />
     <author>
-      <name>your_full_name</name>
+      <name>thankstoalive</name>
     </author>
 
   
